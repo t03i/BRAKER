@@ -95,6 +95,7 @@ COPY --from=builder /opt /opt
 
 # Install runtime dependencies for all tools, including Perl and its dependencies for script execution
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    gosu \
     # Dependencies for AUGUSTUS and genomic analysis tools
     libgsl-dev \
     libboost-all-dev \
