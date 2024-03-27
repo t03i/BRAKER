@@ -143,8 +143,6 @@ WORKDIR /data
 ENV PATH=/opt/seqstats:/opt/cdbfasta:/opt/Augustus/bin:/opt/Augustus/scripts:/opt/TSEBRA/bin:/opt/MakeHub:/opt/BRAKER/scripts:/opt/ETP/bin:/opt/ETP/tools::/opt/ETP/bin/gmes/ProtHint/bin:/opt/ETP/bin/gmes:/opt/compleasm_kit:$PATH \
     AUGUSTUS_CONFIG_PATH=/data/augustus/config 
 
-# Switch to non-root user
-USER abc
 
 
 # -------------------------------------------------------------------------------------- #
