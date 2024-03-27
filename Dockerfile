@@ -185,7 +185,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copy compiled binaries and scripts from the builder stage
-COPY --from=base /opt /opt
+COPY --from=builder /opt /opt
 
 # Set environment paths for the installed tools
 ENV PATH=${PATH}:/opt/seqstats:/opt/cdbfasta:/opt/Augustus/bin:/opt/Augustus/scripts:/opt/TSEBRA/bin:/opt/MakeHub
