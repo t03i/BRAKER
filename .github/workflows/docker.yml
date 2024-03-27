@@ -56,7 +56,7 @@ jobs:
               with:
                   context: .
                   file: ./Dockerfile
-                  targets: ${{ matrix.target }}
+                  target: ${{ matrix.target }}
                   push: ${{ github.event_name != 'pull_request' }}
                   tags: ${{ steps.meta.outputs.tags }}
                   labels: ${{ steps.meta.outputs.labels }}
